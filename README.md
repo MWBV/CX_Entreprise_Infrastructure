@@ -29,7 +29,7 @@ L'architecture s'articule autour d'un siège principal (**QG en Côte d'Ivoire**
 ## Documents d'Architecture Détaillés
 
 Les spécifications techniques complètes sont contenues dans le dossier `/docs` :
-* [Plan d'Adressage IP Détaillé](docs/ip-addressing-plan.md)
+* [Plan d'Adressage IP Détaillé](docs/ip-addressing.md)
 * [Matrice de Sécurité & Flux Zero-Trust](docs/security-matrix.md)
 * [Architecture & Règles SD-WAN](docs/sdwan-architecture.md)
 * [Flux d'Accès Externe via Bastion](docs/transit-bastion-flow.md)
