@@ -7,15 +7,15 @@
 [![WAN](https://img.shields.io/badge/WAN-FortiGate_Secure_SD--WAN-green.svg)]()
 [![Lab Environment](https://img.shields.io/badge/Lab-GNS3_on_Proxmox-orange.svg)]()
 
-## 📌 Présentation du Projet
+## Présentation du Projet
 
-Ce projet documente et simule la conception complète d'une infrastructure réseau et systèmes d'entreprise pour la société **CX** (spécialisée dans le code/développement, le design graphique et l'impression industrielle).
+Ce projet documente et simule la conception d'une infrastructure réseau et systèmes d'entreprise pour la société fictive au nom de **CX** (spécialisée dans le code/développement, le design graphique et l'impression industrielle).
 
 L'architecture s'articule autour d'un siège principal (**QG en Côte d'Ivoire**) réparti sur deux Data Centers (DC-A & DC-B), d'un site annexe (**Branch 1 - CI**) et d'un site distant d'outre-mer (**Branch 2 - Afrique du Sud**).
 
 ---
 
-## 🎯 Points Clés de l'Architecture
+## Points Clés de l'Architecture
 
 * **Double Pare-feu (Edge vs Core) :** Un `FortiGate-Edge` dédié à la bordure Internet/SD-WAN et un `FortiGate-Core` dédié à la segmentation interne et l'inspection inter-VLAN.
 * **FortiGate Secure SD-WAN :** Agrégation des liens `ISP-1` et `ISP-2` avec basculement automatique (*SLA Steering*) selon la latence et le gigotage vers la Branch 2.
@@ -26,7 +26,17 @@ L'architecture s'articule autour d'un siège principal (**QG en Côte d'Ivoire**
 
 ---
 
-## 🏗️ Topologie Réseau Globale
+## Documents d'Architecture Détaillés
+
+Les spécifications techniques complètes sont contenues dans le dossier `/docs` :
+* [Plan d'Adressage IP Détaillé](docs/ip-addressing-plan.md)
+* [Matrice de Sécurité & Flux Zero-Trust](docs/security-matrix.md)
+* [Architecture & Règles SD-WAN](docs/sdwan-architecture.md)
+* [Flux d'Accès Externe via Bastion](docs/transit-bastion-flow.md)
+
+---
+
+## Topologie Réseau Globale
 
 ```text
                       [ INTERNET ]
